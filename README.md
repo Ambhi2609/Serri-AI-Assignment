@@ -18,7 +18,7 @@ An intelligent document-based Q&A system built with Streamlit that uses Retrieva
 - [Architecture & Development Decisions](#architecture--development-decisions)
 - [Configuration](#configuration)
 - [Tech Stack](#tech-stack)
-- [Future Enhancements & Roadmap](#future-enhancements-&-roadmap)
+- [Future Enhancements](#future-enhancements)
 
 ## Quick Setup
 
@@ -230,7 +230,7 @@ All application logs are written to `support_bot_log.txt`. This includes:
 
 Check this file for debugging and monitoring.
 
-## Future Enhancements & Roadmap
+## Future Enhancements
 
 ### 1. Advanced Embedding Models
 
