@@ -166,17 +166,6 @@ The system implements **semantic caching** using FAISS to cache LLM responses.
 
 This keeps the system lightweight while providing enterprise-grade caching performance.
 
-## Project Structure
-
-project/
-├── app.py # Main Streamlit application
-├── document_ingestion.py # Document processing & FAISS vector store
-├── support_agent.py # RAG agent with answer generation
-├── semantic_cache.py # FAISS-based semantic caching
-├── requirements.txt # Python dependencies
-├── support_bot_log.txt # Centralized application logs (generated)
-└── semantic_cache.json # Persisted cache data (generated)
-
 
 ## Configuration
 
