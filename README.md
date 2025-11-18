@@ -16,10 +16,9 @@ An intelligent document-based Q&A system built with Streamlit that uses Retrieva
 
 - [Quick Setup](#quick-setup)
 - [Architecture & Development Decisions](#architecture--development-decisions)
-- [Project Structure](#project-structure)
 - [Configuration](#configuration)
 - [Tech Stack](#tech-stack)
-- [License](#license)
+- [Future Enhancements & Roadmap](#future-enhancements-&-roadmap)
 
 ## Quick Setup
 
