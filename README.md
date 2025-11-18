@@ -231,5 +231,84 @@ All application logs are written to `support_bot_log.txt`. This includes:
 
 Check this file for debugging and monitoring.
 
+## Future Enhancements & Roadmap
+
+### 1. Advanced Embedding Models
+
+**What**: Migrate from local lightweight embeddings to production-grade embedding services
+
+**Why**: 
+- Current model optimized for cost/speed, not accuracy
+- Better semantic understanding needed for complex technical queries (15-25% accuracy gain)
+- Multilingual support for global documentation
+- Domain-specific fine-tuning capabilities for specialized industries
+
+---
+
+### 2. Managed Vector Database
+
+**What**: Replace local FAISS storage with cloud-based vector database
+
+**Why**:
+- Current solution limited to <100K documents before performance degrades
+- Need real-time document updates without full reindexing
+- Horizontal scaling for enterprise workloads (1M+ chunks)
+- Advanced filtering by metadata (date, source, permissions)
+- Multi-tenancy support for different users/organizations
+- Sub-100ms query latency at scale
+
+---
+
+### 3. Agentic RAG Architecture
+
+**What**: Transform from single-pass retrieval to autonomous multi-step reasoning agents
+
+**Why**:
+- Complex questions require multiple retrieval steps and synthesis
+- Agents can decide when to search vs. answer from memory
+- Query decomposition improves handling of multi-part questions
+- Self-reflection reduces hallucination by 30-60%
+- Document grading filters irrelevant chunks before generation
+- Adaptive retrieval saves costs on simple queries
+
+---
+
+### 4. FastAPI Production Backend
+
+**What**: Decouple business logic into scalable API service
+
+**Why**:
+- Current Streamlit app couples frontend and backend (hard to scale)
+- Need to support multiple clients (web, mobile, Slack, API integrations)
+- Async processing for long-running document ingestion
+- Horizontal scaling with load balancing
+- Authentication, rate limiting, and access control
+- Monitoring, logging, and observability for production
+- Background job processing for batch operations
+
+---
+
+### 5. Infrastructure & Quality Improvements
+
+**What**: Enhanced document management, analytics, and security
+
+**Why**:
+- **Document versioning**: Track changes, rollback errors, audit trail
+- **Quality metrics**: Measure retrieval success, identify knowledge gaps
+- **Citation tracking**: Link answers to specific sources for transparency
+- **Security compliance**: Encryption, PII redaction, GDPR requirements
+- **Cost optimization**: Token usage tracking, caching analytics
+- **User feedback loops**: Continuous improvement from real usage patterns
+
+---
+
+### Roadmap Timeline
+
+- **Q1 2026**: Production backend architecture
+- **Q2 2026**: Scalable vector infrastructure
+- **Q3 2026**: Agentic reasoning capabilities
+- **Q4 2026**: Advanced embeddings & analytics
+
+**Want to contribute?** Open an issue to discuss implementation!
 
 
